@@ -1,9 +1,10 @@
+"use client";
 import Image from "next/image";
 
-export default function NFTCard() {
+export default function NFTCard({ image }: { image: string }) {
   return (
     <div className="border border-gray-600 h-72 w-50 rounded">
-      <Image src={"/nft.png"} height={200} width={200} alt={"alt text"} />
+      <img src={image} height={200} width={200} alt={"idhar image nhi hai"} />
       <div className="mx-2">
         <div className="mt-2 flex flex-row  items-center  ">
           <svg
